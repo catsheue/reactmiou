@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'microsoft yahei';
+  line-height: 1;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+button{
+  border: none;
+  cursor: pointer;
+  font-family: 'microsoft yahei';
+}
+input {
+  font-family: 'microsoft yahei';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.cf:after {
+  clear: both;
+  display: block;
+  content: "";
+  height: 0;
+  visibility: hidden;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+ol {
+  li {
+    list-style: decimal;
+  }
+  list-style: decimal;
+  list-style-position: outside;
+  padding-left: 1rem;
+}
+
+
+
+h2{
+  font-weight: 300;
+}

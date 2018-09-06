@@ -1,0 +1,51 @@
+@import "lunatool";
+@import "resetnew";
+
+$mainBackground: pink;
+
+body {
+  background: $mainBackground;
+  margin: 0;
+  padding: 0;
+}
+
+.react {
+
+  &__title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+    color: #fff;
+
+    background: #333;
+  //  border-bottom: 2px solid #25B9C4;
+    border-bottom: 2px solid #25B9C4;
+
+  }
+
+  &__nav {
+    float: left;
+    font-size: 16px;
+    width: 15%;
+    color: #fff;
+    background: #272727;
+    height: 100vh;
+    li {
+
+      padding: 15px 0 15px 15px;
+
+    }
+  }
+
+  &__content {
+
+    width: 85%;
+    height: 100vh;
+    color: #fff;
+    background: #1f1f1f;
+    line-height: 1.5;
+    float: left;
+    padding: 15px;
+    font-size: 15px;
+  }
+}
