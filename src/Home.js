@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import Emoji from "./Emoji";
+import ReactLogo from "./img/logo.png";
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="react__home">
                 <h2>HELLO</h2>
-                <p>Luna is cute <Emoji symbol="😄"/></p>
+                <img className="react__logo" src={ReactLogo} alt=""/>
+                <p>This is a site all about react examples. <Emoji symbol="😄"/></p>
             </div>
         )
     }

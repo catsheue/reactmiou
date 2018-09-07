@@ -11,6 +11,30 @@ body {
 
 .react {
 
+  &__home{
+    padding: 60px;
+    text-align: center;
+  }
+
+  &__logo{
+
+    width: 640px;
+    display: block;
+    margin: 0 auto;	-webkit-animation: rotation 15s infinite linear;
+  }
+  &__submenu {
+
+    li {
+
+      a {
+        display: block;
+        background: gray;
+        padding: 10px;
+
+
+      }
+    }
+  }
   &__title {
     text-align: center;
     padding: 15px 0;
@@ -23,6 +47,20 @@ body {
 
   }
 
+  &__anchor {
+    cursor: pointer;
+
+    @include transition(.3s);
+
+    background: #353535;
+    display: block;
+    padding: 15px 0 15px 15px;
+    &:hover {
+      background: black;
+    }
+
+    border-bottom: 2px solid #000;
+  }
   &__nav {
     float: left;
     font-size: 16px;
@@ -32,7 +70,9 @@ body {
     height: 100vh;
     li {
 
-      padding: 15px 0 15px 15px;
+      a, span {
+
+      }
 
     }
   }
@@ -66,5 +106,14 @@ body {
     float: left;
     padding: 15px;
     font-size: 15px;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
   }
 }
