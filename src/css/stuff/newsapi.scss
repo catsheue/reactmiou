@@ -1,0 +1,25 @@
+.newsapi {
+
+  &__thumbnail {
+
+
+
+
+
+    img{
+      height: 230px;   width: 100%;
+    }
+  }
+
+  &__pic {
+    float: left;
+    width: 30%;
+    padding: 1%;
+  }
+
+  &__con {
+    float: left;
+    width: 70%;
+    padding: 1%;
+  }
+}

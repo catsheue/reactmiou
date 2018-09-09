@@ -1,8 +1,10 @@
 @import "lunatool";
 @import "resetnew";
 
-$mainBackground: pink;
-
+$mainBackground: #333;
+html, body{
+  height:100%;
+}
 body {
   background: $mainBackground;
   margin: 0;
@@ -11,16 +13,17 @@ body {
 
 .react {
 
-  &__home{
+  &__home {
     padding: 60px;
     text-align: center;
   }
 
-  &__logo{
+  &__logo {
 
     width: 640px;
     display: block;
-    margin: 0 auto;	-webkit-animation: rotation 15s infinite linear;
+    margin: 0 auto;
+    -webkit-animation: rotation 15s infinite linear;
   }
   &__submenu {
 
@@ -28,9 +31,8 @@ body {
 
       a {
         display: block;
-        background: gray;
+        background: #484848;
         padding: 10px;
-
 
       }
     }
@@ -49,6 +51,9 @@ body {
 
   &__anchor {
     cursor: pointer;
+    width: 100%;
+    color: #fff;
+    text-align: left;
 
     @include transition(.3s);
 
@@ -99,7 +104,9 @@ body {
   &__content {
 
     width: 85%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    height: 100%;
     color: #fff;
     background: #1f1f1f;
     line-height: 1.5;
