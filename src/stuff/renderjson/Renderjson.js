@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./../../css/stuff/renderjson.scss";
 // Page Definitions
 // –––
 // page1 and page2 define the page structure in
@@ -247,13 +247,17 @@ class RenderJSON extends React.Component {
 
     render() {
         return (
-            <div className="app-component">
+            <div className="renderjson app-component">
+                <h2>Render JSON data</h2>
                 <nav className="app-nav">
                     <button onClick={ev => this.gotoPage(page1)}>Page 1</button>
                     <button onClick={ev => this.gotoPage(page2)}>Page 2</button>
                 </nav>
-                <p>Current Page: <b>{this.state.curPage.title}</b></p>
-                <DynamicPage page={this.state.curPage}/>
+                <div className="renderjson__con">
+                    <p>Current Page: <b>{this.state.curPage.title}</b></p>
+                    <DynamicPage page={this.state.curPage}/>
+
+                </div>
 
 
             </div>

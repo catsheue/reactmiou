@@ -2,9 +2,10 @@
 @import "resetnew";
 
 $mainBackground: #333;
-html, body{
-  height:100%;
+html, body {
+  height: 100%;
 }
+
 body {
   background: $mainBackground;
   margin: 0;
@@ -122,5 +123,17 @@ body {
   }
   to {
     -webkit-transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.react__title{
+  font-size: 17px;
+}
+  .react__nav {
+    display: none;
+  }
+  .react__content{
+    width: 100%;
   }
 }

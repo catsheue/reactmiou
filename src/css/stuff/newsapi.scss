@@ -1,13 +1,12 @@
+@import "./../lunatool";
+
 .newsapi {
 
   &__thumbnail {
 
-
-
-
-
-    img{
-      height: 230px;   width: 100%;
+    img {
+      height: 230px;
+      width: 100%;
     }
   }
 
@@ -21,5 +20,48 @@
     float: left;
     width: 70%;
     padding: 1%;
+
+    h4 {
+      font-size: 20px;
+    }
   }
+
+  &__ul {
+    li {
+      margin: 10px 0;
+
+      a {
+        display: block;
+
+        @include transition(.6s);
+
+        &:hover {
+          background: #171717;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .newsapi{
+    h1{
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  .newsapi__thumbnail img {
+    //height: 130px;
+    width: 100%;
+height: auto;
+
+  }
+  .newsapi__con {
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+
 }

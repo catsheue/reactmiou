@@ -1,0 +1,32 @@
+.app-nav{
+text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  button{
+    display: inline-block;
+    background: none;
+    background: teal;
+    width: 40%;
+    margin: 0 1%;
+    color: #fff;
+    padding: 10px 0;
+
+  }
+}
+
+.dynamicpage-component{
+  section{
+    margin: 35px 0;
+  }
+}
+
+.renderjson{
+  h2{
+    text-align: center;
+  }
+
+  &__con{
+    width: 80%;
+    margin: 0 auto;
+  }
+}

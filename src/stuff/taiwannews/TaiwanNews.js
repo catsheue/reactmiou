@@ -1,5 +1,6 @@
 import React from "react";
 import "./../../css/stuff/newsapi.scss";
+import errImg from "./../../img/luna.png";
 
 class Attribution extends React.Component {
     render() {
@@ -12,15 +13,22 @@ class Attribution extends React.Component {
 }
 
 class News extends React.Component {
+
+    addDefaultSrc(ev){
+        ev.target.src = errImg;
+    }
+
     render() {
         return <div>
-            <ul className="list-unstyled">
+            <ul className="newsapi__ul">
                 {this.props.news.map((newsItem) =>
                     <li className="news-item">
                         <a target="_blank" href={newsItem.url}>
                             <div className="cf">
                                 <div className="newsapi__pic">
-                                    <div className="newsapi__thumbnail"><img alt="news" src={newsItem.urlToImage}/></div>
+                                    <div className="newsapi__thumbnail">
+                                        <img alt="news" src={newsItem.urlToImage} onError={this.addDefaultSrc}/>
+                                    </div>
                                 </div>
                                 <div className="newsapi__con">
                                     <h4>{newsItem.title}</h4>
