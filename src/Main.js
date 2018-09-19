@@ -217,6 +217,9 @@ class Main extends Component {
         });
     };
 
+    test() {
+        console.log(this);
+    }
 
     handleMenuClick() {
         this.setState({menuOpen: !this.state.menuOpen});
@@ -230,32 +233,7 @@ class Main extends Component {
     render() {
         const {height} = this.state;
 
-        const styles =
-            {
-                container: {
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    zIndex: '99',
-                    opacity: 0.9,
-                    display: 'flex',
-                    alignItems: 'center',
-                    background: 'black',
-                    width: '100%',
-                    color: 'white',
-                    fontFamily: 'Lobster',
-                },
 
-                body: {
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    width: '100vw',
-                    height: '100vh',
-                    filter: this.state.menuOpen ? 'blur(2px)' : null,
-                    transition: 'filter 0.5s ease',
-                },
-            };
         const menu = [
             {
                 name: "Home",
@@ -266,12 +244,13 @@ class Main extends Component {
             }, {
                 name: "Taiwan News",
                 url: "/taiwannews"
-            },{
+            }, {
                 name: "Contact Me",
                 url: "/contact"
             }
         ];
-        const url = ['/', '/renderjson', '/taiwannews', '/', '/contact'];
+
+
         const menuItems = menu.map((val, index) => {
             return (
                 <MenuItem
@@ -304,6 +283,7 @@ class Main extends Component {
                     </NavLink>
 
                     <div className="cf">
+
                         <ul className="react__nav">
                             <li>
                                 <NavLink className="react__anchor" to="/">Home</NavLink>
@@ -320,7 +300,8 @@ class Main extends Component {
                                     <ul className="react__submenu">
                                         <li>
                                             <NavLink className="react__subanchor" to="/renderjson">Render JSON</NavLink>
-                                            <NavLink className="react__subanchor" to="/taiwannews">Taiwan News AJAX</NavLink>
+                                            <NavLink className="react__subanchor" to="/taiwannews">Taiwan News
+                                                AJAX</NavLink>
                                             <NavLink className="react__subanchor" to="/weather">Weather</NavLink>
                                         </li>
                                     </ul>

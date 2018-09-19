@@ -27,7 +27,7 @@ class News extends React.Component {
                             <div className="cf">
                                 <div className="newsapi__pic">
                                     <div className="newsapi__thumbnail">
-                                        <img alt="news" src={newsItem.urlToImage} onError={this.addDefaultSrc}/>
+                                        <img alt="news" src={newsItem.urlToImage ? newsItem.urlToImage : errImg} />
                                     </div>
                                 </div>
                                 <div className="newsapi__con">
@@ -48,35 +48,63 @@ class NewsContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            news: []
+            error: null,
+            news: [],
+            isLoaded: false
         }
     }
 
     componentDidMount() {
         var self = this;
         //console.log('this.url=', this.url);
+
         fetch(this.url)
-            .then(function (response) {
-                return response.json()
-            }).then(function (json) {
-            //console.log('parsed json', json)
-            if (json.status === 'ok') {
-                self.setState({
-                    news: json.articles
-                });
-            } else {
-                alert(json.status);
-            }
-        }).catch(function (ex) {
-            console.log('parsing failed', ex)
-        })
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        isLoaded: true,
+                        news: result.articles
+                    });
+                },
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    });
+                }
+            )
+
+        // fetch(this.url)
+        //     .then(function (response) {
+        //         return response.json()
+        //     }).then(function (json) {
+        //     //console.log('parsed json', json)
+        //     if (json.status === 'ok') {
+        //         self.setState({
+        //             news: json.articles,
+        //             isLoaded: true
+        //         });
+        //     } else {
+        //         alert(json.status);
+        //     }
+        // }).catch(function (ex) {
+        //     console.log('parsing failed', ex)
+        // })
     }
 
     render() {
-        return <div>
+        const {error, isLoaded} = this.state;
+        //驚!上面這行一定要在!
+        if (error) {
+            return <div>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div>Loading...</div>;
+        } else {
+            return <News news={this.state.news}/>;
+        }
 
-            <News news={this.state.news}/>
-        </div>;
+
     }
 }
 

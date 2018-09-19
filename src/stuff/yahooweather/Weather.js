@@ -28,14 +28,27 @@ function weatherImg(howCode) {
 //https://reactjs.org/docs/faq-ajax.html
 class Weather extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.getDayNum = this.getDayNum.bind(this);
+
+    }
+
+    getDayNum(daynum) {
+        let a = daynum.indexOf(" ");
+        let tara = daynum.substring(0, a + 1);
+        return tara;
+    }
 
     render() {
         const {query} = this.props.how;
         let rawTit = query.results.channel.title;
 
         let n = rawTit.indexOf(",");
-        let tar = rawTit.substring(n+1);
+        let tar = rawTit.substring(n + 1);
         let locationTit = tar;
+
+
         return (
 
             <div>
@@ -49,9 +62,16 @@ class Weather extends React.Component {
                     {query.results.channel.item.forecast.slice(0, 7).map((forYou, index) =>
                         <li key={index.toString()}>
                             <div className="cf">
-                                {forYou.date}
+                                <p>{forYou.day}</p>
+                                <p className="weather__day">{this.getDayNum(forYou.date)} </p>
+
                             </div>
                             <img className="weathericon" src={weatherImg(forYou.code)} alt=""/>
+                            <div>
+                                <span className="weather__high">{forYou.high}°</span>
+                                <span className="weather__low">{forYou.low}°</span>
+                            </div>
+
                         </li>)}
                 </ul>
             </div>
@@ -74,10 +94,16 @@ class WeatherCard extends React.Component {
         };
 
         this.setLocation = this.setLocation.bind(this);
+        this.getLocationInfo = this.getLocationInfo.bind(this);
     }
-    setLocation(event){
-        this.setState({location: event.target.value});
 
+    setLocation(event) {
+        this.setState({location: event.target.value}, this.getLocationInfo);
+
+
+    }
+
+    getLocationInfo() {
         let query = encodeURI("select * from weather.forecast where woeid ='" + this.state.location + "' and u='c'");
         let url = "https://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json";
 
@@ -97,31 +123,11 @@ class WeatherCard extends React.Component {
                     });
                 }
             )
-
     }
-
 
     componentDidMount() {
+        this.getLocationInfo();
 
-        let query = encodeURI("select * from weather.forecast where woeid ='" + this.state.location + "' and u='c'");
-        let url = "https://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json";
-
-        fetch(url)
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        isLoaded: true,
-                        weather: result
-                    });
-                },
-                (error) => {
-                    this.setState({
-                        isLoaded: true,
-                        error
-                    });
-                }
-            )
     }
 
     render() {
@@ -135,7 +141,7 @@ class WeatherCard extends React.Component {
         } else {
             return (
                 <div className="weather">
-                    <select value={this.state.location} onChange={this.setLocation}>
+                    <select className="weather__select" value={this.state.location} onChange={this.setLocation}>
                         <option value="2306179">Taipei</option>
                         <option value="2151330">Beijing</option>
                         <option value="1180689">Manila</option>
@@ -148,7 +154,6 @@ class WeatherCard extends React.Component {
         }
     }
 }
-
 
 
 export default WeatherCard;

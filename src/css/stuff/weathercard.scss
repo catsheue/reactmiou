@@ -8,16 +8,64 @@
 
   color: white;
 
-  width: 600px;
+  //width: 600px;
+  width: 700px;
   margin: 3rem auto;
-  background: darkslategrey;
+  //background: darkslategrey;
+  background: rgb(85,189,236);
+  //background: linear-gradient(328deg, rgba(85,189,236,1) 4%, rgba(35,176,245,1) 28%, rgba(76,187,232,1) 76%);
+  background: linear-gradient(328deg, #2dbfff 4%, #2196F3 28%, #29bdff 76%);
   @include border-radius(10px);
   padding: 15px;
   border: 2px solid teal;
 
+  &__select{
+    padding: 8px;
+    border: none;
+    width: 130px;
+    background: #0d94ff;
+    color: white;
+  }
+  &__location{
+
+    @include rem(font-size,35px);
+
+    padding: 15px 0;
+    font-weight: bold;
+  }
   &__daylist {
     li {
+
+
       float: left;
+      width: 14.27%;
+      text-align: center;
+      padding: 5px;
+      &:first-child{
+        background: rgba(0, 137, 255, 0.5);
+
+      }
+      img{
+        display: inline-block;
+      }
     }
+  }
+  &__day {
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  &__high {
+    color: gold;
+    font-weight: bold;
+    padding-right: 10px;
+    display: inline-block;
+  }
+
+  &__low {
+    display: inline-block;
+    color: #d8fffc;
+    font-weight: bold;
   }
 }
