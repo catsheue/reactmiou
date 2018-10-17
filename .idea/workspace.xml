@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04605507-1f70-481e-927e-4dcf7b89dd82" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/stuff/weathercard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/stuff/weathercard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stuff/taiwannews/TaiwanNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stuff/taiwannews/TaiwanNews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stuff/yahooweather/Weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stuff/yahooweather/Weather.js" afterDir="false" />
     </list>
@@ -20,11 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="306">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
@@ -33,8 +32,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="279" column="47" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
+            <state relative-caret-position="5688">
+              <caret line="330" selection-start-line="330" selection-end-line="330" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#193#225#0" expanded="true" />
@@ -43,11 +42,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsobject.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/jsobject.php">
+      <file leaf-file-name="Newspaper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+            <state relative-caret-position="396">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Newspaper.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -55,7 +66,7 @@
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="216">
               <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -64,22 +75,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../webpack-react-tutorial/package.json">
+      <file leaf-file-name="Weather.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stuff/yahooweather/Weather.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="2754">
+              <caret line="157" column="62" lean-forward="true" selection-start-line="157" selection-start-column="62" selection-end-line="157" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Weather.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stuff/yahooweather/Weather.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ask-me-anything/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ask-me-anything/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+            <state relative-caret-position="144">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +107,8 @@
       <file leaf-file-name="TaiwanNews.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/stuff/taiwannews/TaiwanNews.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="29" column="111" selection-start-line="29" selection-start-column="111" selection-end-line="29" selection-end-column="111" />
+            <state relative-caret-position="293">
+              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -110,11 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Collapsible__trigger</find>
-      <find>parentClassString</find>
-      <find>openClass</find>
-      <find>triggerClassString</find>
-      <find>app</find>
       <find>HighlightJs</find>
       <find>Cover</find>
       <find>label</find>
@@ -140,6 +154,11 @@
       <find>url</find>
       <find>SELECT</find>
       <find>error</find>
+      <find>switch</find>
+      <find>DEFAULT</find>
+      <find>self</find>
+      <find>news</find>
+      <find>News</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,10 +209,13 @@
         <option value="$PROJECT_DIR$/../test/closure.php" />
         <option value="$PROJECT_DIR$/src/css/stuff/weathercard.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/Main.js" />
         <option value="$PROJECT_DIR$/../test/jsobject.php" />
         <option value="$PROJECT_DIR$/src/Home.js" />
         <option value="$PROJECT_DIR$/src/stuff/yahooweather/Weather.js" />
+        <option value="$PROJECT_DIR$/../ask-me-anything/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Main.js" />
+        <option value="$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.scss" />
+        <option value="$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.js" />
         <option value="$PROJECT_DIR$/src/stuff/taiwannews/TaiwanNews.js" />
       </list>
     </option>
@@ -225,9 +247,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="30" />
-    <option name="y" value="291" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-451" />
+    <option name="y" value="324" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -395,24 +417,26 @@
       <workItem from="1536207057251" duration="35159000" />
       <workItem from="1536397366621" duration="37352000" />
       <workItem from="1536898514361" duration="29800000" />
-      <workItem from="1537194218125" duration="14347000" />
+      <workItem from="1537194218125" duration="25605000" />
+      <workItem from="1537785500596" duration="7586000" />
+      <workItem from="1538034802371" duration="608000" />
+      <workItem from="1538660468478" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128599000" />
+    <option name="totallyTimeSpent" value="149305000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20357142" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005952" side_tool="true" weight="0.014270033" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49940476" weight="0.023076924" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49940476" visible="true" weight="0.023076924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32930845" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -434,34 +458,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-collapsible/src/Collapsible.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="167" column="87" selection-start-line="167" selection-start-column="87" selection-end-line="167" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Emoji.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-collapsible/dist/Collapsible.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5654">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -678,15 +674,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="306">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ask-me-anything/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ask-me-anything/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../webpack-react-tutorial/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5688">
+          <caret line="330" selection-start-line="330" selection-end-line="330" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#193#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stuff/yahooweather/Weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="157" column="62" lean-forward="true" selection-start-line="157" selection-start-column="62" selection-end-line="157" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -697,31 +737,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.js">
+    <entry file="file://$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="279" column="47" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#193#225#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home.js">
+    <entry file="file://$PROJECT_DIR$/src/stuff/taiwannews/Newspaper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stuff/yahooweather/Weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+        <state relative-caret-position="396">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -730,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stuff/taiwannews/TaiwanNews.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="29" column="111" selection-start-line="29" selection-start-column="111" selection-end-line="29" selection-end-column="111" />
+        <state relative-caret-position="293">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
